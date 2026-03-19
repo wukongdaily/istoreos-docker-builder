@@ -1,0 +1,18 @@
+config system
+        option hostname 'iStoreOS'
+        option ttylogin '0'
+        option log_size '128'
+        option urandom_seed '0'
+        option zonename 'Asia/Shanghai'
+        option log_proto 'udp'
+        option conloglevel '8'
+        option cronloglevel '7'
+        option timezone 'CST-8'
+        option description 'wukongdaily'
+        option notes 'B站主页 https://space.bilibili.com/250915741'
+
+config timeserver 'ntp'
+        list server 'ntp.aliyun.com'
+        list server 'ntp.tencent.com'
+        list server 'cn.ntp.org.cn'
+        list server 'ntp.ntsc.ac.cn'

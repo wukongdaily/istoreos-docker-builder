@@ -1,0 +1,5 @@
+output/
+*.tar
+*.img
+*.gz
+*.DS_Store

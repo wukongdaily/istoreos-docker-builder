@@ -1,0 +1,4 @@
+config quickstart 'main'
+
+config disabledisplay 'modules'
+        list module 'diskInfo'
