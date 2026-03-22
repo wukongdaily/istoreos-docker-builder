@@ -90,8 +90,8 @@ targets/
 
 ## 上游项目
 
-* iStoreOS
-* OpenWrt
+* [iStoreOS](https://github.com/istoreos/istoreos)
+* [OpenWrt](https://github.com/openwrt/)
 
 本项目不包含完整源码，请参考上游仓库。
 
