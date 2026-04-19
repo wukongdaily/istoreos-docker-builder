@@ -103,6 +103,16 @@ targets/
 
 ---
 
+- 建议在Linux内核较高（6.x）的系统上使用(比如飞牛、绿联、OMV、Armbian、Debian、Ubuntu等等) 
+- ✅ 已测试 飞牛fnOS（x86-64 、arm64） 
+- ✅ 已测试 绿联UGOS（x86-64） arm64（绿联 DH4300 PLUS已测试）
+- ✅ 已测试 openmediavault（x86-64 、arm64）
+- ✅ 已测试 Armbian（x86-64 、arm64）
+- ❌ TrueNAS 存在兼容问题 请勿搭建
+- ❌ 威联通和群晖 存在兼容问题 请勿搭建
+(因为他们都深度魔改了 Linux 内核与网络，虚拟交换机、OVS、lxcbr0 网桥、权限管控、防火墙规则全是定制的，跟标准 Linux、飞牛、UNRAID 绿联 完全不一样。这两款建议直接使用虚拟机)
+- ❌ 极空间（不能运行，原因是极空间不开放docker的root权限（privileged）。）存在兼容问题 请勿搭建
+
 ## ❤️ 支持项目
 
 如果这个项目对你有帮助：
