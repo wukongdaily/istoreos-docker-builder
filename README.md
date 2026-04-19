@@ -7,6 +7,7 @@
 
 English | [简体中文](README_CN.md)
 
+
 # istoreos-docker-builder
 
 🔗 Docker Hub：https://hub.docker.com/r/wukongdaily/openwrt-istoreos
@@ -25,6 +26,30 @@ This project provides reproducible build scripts and configurations for generati
 * Preconfigured system files
 
 ---
+
+## Supported Systems List
+
+Supports **x86-64** and **arm64**
+
+> It is recommended to run on systems with a relatively new Linux kernel (6.x), such as fnOS, UGOS, OMV, Armbian, Debian, Ubuntu, etc.
+
+---
+
+## ✅ Tested and Verified
+
+- fnOS (x86-64, arm64)
+- UGOS (x86-64), arm64 (UGOS DH4300 PLUS tested)
+- openmediavault (OMV) (x86-64, arm64)
+- Armbian (x86-64, arm64)
+
+---
+
+## ❌ Not Recommended / Compatibility Issues
+
+- TrueNAS — Compatibility issues. **Do not deploy.**
+- QNAP and Synology — Compatibility issues. **Do not deploy.**  
+  These systems heavily customize the Linux kernel and networking stack (virtual switches, OVS, `lxcbr0` bridges, permission controls, firewall rules), which differ significantly from standard Linux environments such as fnOS, UNRAID, and UGOS. It is recommended to use a virtual machine instead.
+- ZimaOS — Cannot run because Docker does not allow `privileged` mode. **Do not deploy.**
 
 ## Customizations
 
