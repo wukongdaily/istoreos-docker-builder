@@ -7,7 +7,14 @@
 
 English | [简体中文](README_CN.md)
 
+### ⚠️ Privilege Notice
 
+This container must run with the `--privileged` flag.
+
+This grants the container near **root-level** access to the host, allowing it to directly modify the host’s network and system configuration.  
+If the container or image is compromised, the risk is equivalent to the entire device being fully controlled.
+
+Only use this container if you **fully understand the risks and trust the image source**, especially in NAS environments such as  fnOS and UGOS devices.
 # istoreos-docker-builder
 
 🔗 Docker Hub：https://hub.docker.com/r/wukongdaily/openwrt-istoreos
