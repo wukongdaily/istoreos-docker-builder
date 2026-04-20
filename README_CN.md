@@ -7,6 +7,15 @@
 
  简体中文| [English](README.md)
 
+### ⚠️ 权限提示
+
+本容器需要以 `--privileged` 权限运行。
+
+这意味着容器拥有接近宿主机 **root** 的权限，可直接修改宿主机的网络与系统配置。  
+一旦容器或镜像被入侵，风险等同于整台设备被完全控制。
+
+请仅在**充分理解风险并信任镜像来源**的前提下，在 飞牛OS、绿联UGOS 等 NAS 场景中使用。
+
 # istoreos-docker-builder
 
 🔗 Docker Hub：https://hub.docker.com/r/wukongdaily/openwrt-istoreos
